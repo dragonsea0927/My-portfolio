@@ -881,7 +881,7 @@ form.addEventListener("submit", handleSubmit);
 const projectData = [
   {
     title: "Tech-ecommerce",
-    thumbnail: "../img/projects-default.jpg",
+    thumbnail: "./img/thumbnails/Tech-ecommerce.png",
     description:
       "A full-stack CRUD Laravel and ReactJs E-Commerce platform with a secure authentication system using Laravel Sanctum, with the admin dashboard.",
     techStack: ["React, Laravel"],
@@ -890,7 +890,7 @@ const projectData = [
   },
   {
     title: "panel-react-laravel",
-    thumbnail: "../img/thumbnails/cutlink-thumbnail.png",
+    thumbnail: "./img/thumbnails/panel-react-laravel.png",
     description:
       "CutLink is a modern and user-friendly web application built with React and Material UI. Our platform offers a complete solution for link shortening. With CutLink, you can create short, branded links that are easy to share. Try CutLink today and experience the power of a smarter link shortning platform!",
     techStack: ["React", "Laravel"],
@@ -899,7 +899,7 @@ const projectData = [
   },
   {
     title: "Hi.Events",
-    thumbnail: "../img/thumbnails/mindmate-thumbnail.png",
+    thumbnail: "./img/thumbnails/Hi.Events.png",
     description:
       "Open-source event management and ticket selling platform 🎟️",
     techStack: ["React", "Laravel"],
@@ -908,7 +908,7 @@ const projectData = [
   },
   {
     title: "laravel-react-vite-stisla",
-    thumbnail: "../img/thumbnails/gittrack-thumbnail.png",
+    thumbnail: "./img/thumbnails/laravel-react-vite-stisla.png",
     description:
       "[NEW!] Auth JWT Multirole + CRUD, Searching, Pagination, Showing with Laravel React Vite and Template admin stisla!",
     techStack: ["React", "Laravel", "vite", "ai"],
@@ -917,7 +917,7 @@ const projectData = [
   },
   {
     title: "trackero-frontend",
-    thumbnail: "../img/thumbnails/my-battery-thumbnail.png",
+    thumbnail: "./img/thumbnails/trackero-frontend.png",
     description:
       "About Trackero is an end-to-end fully functioning task management Web App based on Trello, which is a collaborative work management app designed to track team projects, highlight tasks underway, show who they are assigned to, and detail progress towards completion.",
     techStack: ["Vue", "socket"],
@@ -926,7 +926,7 @@ const projectData = [
   },
   {
     title: "twitter-clone",
-    thumbnail: "../img/thumbnails/sys-info-thumbnail.png",
+    thumbnail: "./img/thumbnails/twitter-clone.png",
     description:
       "Twitter Clone: A Next.js 14 project with SASS, TailwindCSS, Framer motion, TypeScript, Tanstack Query, MongoDB, Prisma, NextAuth and Zustand",
     techStack: ["Next.js", "MongoDB", "SCSS"],
@@ -935,7 +935,7 @@ const projectData = [
   },
   {
     title: "KandysLaunderette",
-    thumbnail: "../img/projects-default.jpg",
+    thumbnail: "./img/thumbnails/KandysLaunderette.png",
     description:
       "This is a Next.js 13 project website I've built for a local Dry-cleaning shop in Swansea. A Typescript based project using nextjs 13 static side rendering. This projects is developed solely with Next.js 13 - featuring, Typescript, Javascript, React 18, Tailwind, and a Headless Wordpress CMS API",
     techStack: ["React", "Next.js", "Typescript"],
@@ -944,7 +944,7 @@ const projectData = [
   },
   {
     title: "thinkdiff",
-    thumbnail: "../img/projects-default.jpg",
+    thumbnail: "./img/thumbnails/thinkdiff.png",
     description:
       "My open source project links, programming and software development related code and tutorials are in this repo. Content types: Python, JavaScript, Dart | Django, React, Flutter, React-Native etc.",
     techStack: ["Node.js", "Python", "Django"],
@@ -973,7 +973,7 @@ function loadContent(projectData) {
     elem.style.setProperty("--rotation", data.rotation + "deg");
     elem.innerHTML = buildTemplate(
       `<div class='projects-header'>
-          <img class="card-img-top img-fluid" style="height: 200px; object-fit: cover;" src={thumbnail} alt="Card image cap">
+          <img  style="height: 200px; " src={thumbnail} alt="Card image cap">
        </div>
        <h5 class="card-title mt-3">{title}</h5>
        <div class='content'>{description}</div>
