@@ -530,12 +530,6 @@ h6 {
 #intro .img img {
   width: 100%;
   position: relative;
-  -webkit-mask: url(../img/clip.webp);
-  mask: url(../img/clip.webp);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: contain;
-  mask-size: contain;
   border-radius: 4px;
   cursor: grab;
 }
